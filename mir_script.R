@@ -71,7 +71,6 @@ anova_mir <- table_microRNA_out |>
 anova_mir <- as.data.frame(anova_mir) |> 
   filter(p > 0.05)
 
-
 tukey_mir_372 <- table_microRNA_out |> 
   filter(target == "mir_372" & time != "24h") |> 
   group_by(time) |> 
